@@ -18,12 +18,12 @@ class ScaffoldPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  width: 150,
+                  width: MediaQuery.of(context).size.width / 2,
                   height: 150,
                   color: Colors.blue,
                 ),
                 Container(
-                  width: 150,
+                  width: MediaQuery.of(context).size.width / 2,
                   height: 150,
                   color: Colors.red,
                 )
@@ -32,15 +32,17 @@ class ScaffoldPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  width: 150,
-                  height: 150,
-                  color: Colors.green,
+                Expanded(
+                  child: Container(
+                    height: 150,
+                    color: Colors.green,
+                  ),
                 ),
-                Container(
-                  width: 150,
-                  height: 150,
-                  color: Colors.lime,
+                Expanded(
+                  child: Container(
+                    height: 150,
+                    color: Colors.lime,
+                  ),
                 )
               ],
             ),
