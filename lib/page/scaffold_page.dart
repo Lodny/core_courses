@@ -10,6 +10,21 @@ class ScaffoldPage extends StatelessWidget {
         title: const Text('Scaffold'),
         centerTitle: true,
       ),
+      drawer: Drawer(
+        child: ListView(
+          children: const [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blueAccent,
+              ),
+              child: Text('Drawer Header Part'),
+            ),
+            ListTile(
+              title: Text('Menu 1'),
+            ),
+          ],
+        ),
+      ),
       body: const Center(
         child: Text(
           'Hello, World!',
