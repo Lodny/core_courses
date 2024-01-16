@@ -14,11 +14,34 @@ class ScaffoldPage extends StatelessWidget {
         alignment: Alignment.center,
         child: Column(
           children: [
-            Container(
-              width: 200,
-              height: 200,
-              color: Colors.blue,
-            )
+            Row(
+              children: [
+                Container(
+                  width: 150,
+                  height: 150,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 150,
+                  height: 150,
+                  color: Colors.red,
+                )
+              ],
+            ),
+            Row(
+              children: [
+                Container(
+                  width: 150,
+                  height: 150,
+                  color: Colors.green,
+                ),
+                Container(
+                  width: 150,
+                  height: 150,
+                  color: Colors.lime,
+                )
+              ],
+            ),
           ],
         ),
       ),
