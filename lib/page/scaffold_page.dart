@@ -11,10 +11,11 @@ class ScaffoldPage extends StatelessWidget {
         centerTitle: true,
       ),
       body: Container(
-        alignment: Alignment.center,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   width: 150,
@@ -29,6 +30,7 @@ class ScaffoldPage extends StatelessWidget {
               ],
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   width: 150,
