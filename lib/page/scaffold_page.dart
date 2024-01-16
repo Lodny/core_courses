@@ -7,17 +7,19 @@ class ScaffoldPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Scaffold'),
+        title: const Text('Column, Row'),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text(
-          'Hello, World!',
-          style: TextStyle(
-            color: Colors.blue,
-            fontWeight: FontWeight.bold,
-            fontSize: 30,
-          ),
+      body: Container(
+        alignment: Alignment.center,
+        child: Column(
+          children: [
+            Container(
+              width: 200,
+              height: 200,
+              color: Colors.blue,
+            )
+          ],
         ),
       ),
     );
