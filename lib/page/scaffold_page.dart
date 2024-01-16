@@ -7,12 +7,11 @@ class ScaffoldPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Column, Row'),
+        title: const Text('Stack'),
         centerTitle: true,
       ),
       body: Container(
-        alignment: Alignment.center,
-        child: Column(
+        child: Stack(
           children: [
             Container(
               width: 200,
