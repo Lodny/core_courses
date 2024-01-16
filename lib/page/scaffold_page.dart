@@ -13,11 +13,17 @@ class ScaffoldPage extends StatelessWidget {
       body: Container(
         alignment: Alignment.center,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
               width: 200,
               height: 200,
               color: Colors.blue,
+            ),
+            Container(
+              width: 200,
+              height: 200,
+              color: Colors.red,
             )
           ],
         ),
