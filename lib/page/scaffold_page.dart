@@ -7,17 +7,28 @@ class ScaffoldPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Column, Row'),
+        title: const Text('GestureDetector'),
         centerTitle: true,
       ),
-      body: Container(
-        alignment: Alignment.center,
+      body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              width: 200,
-              height: 200,
-              color: Colors.blue,
+            TextButton(
+              onPressed: () {
+                print('pressed: TextButton');
+              },
+              child: Container(
+                width: 100,
+                height: 100,
+                color: Colors.orange
+              ),
+            ),
+            GestureDetector(
+              child: const Text('GestureDetector'),
+              onTap: () {
+                print('tapped: GestureDetector');
+              },
             )
           ],
         ),
