@@ -14,9 +14,27 @@ class ScaffoldPage extends StatelessWidget {
         child: Stack(
           children: [
             Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
+              color: Colors.blue,
+            ),
+            Container(
               width: 200,
               height: 200,
-              color: Colors.blue,
+              color: Colors.red,
+              margin: const EdgeInsets.only(top: 50, left: 50),
+            ),
+            Container(
+              width: 200,
+              height: 200,
+              color: Colors.green,
+              margin: const EdgeInsets.only(top: 100, left: 100),
+            ),
+            Container(
+              width: 200,
+              height: 200,
+              color: Colors.orange,
+              margin: const EdgeInsets.only(top: 150, left: 150),
             )
           ],
         ),
