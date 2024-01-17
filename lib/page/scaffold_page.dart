@@ -7,21 +7,27 @@ class ScaffoldPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Column, Row'),
+        title: const Text('ListView'),
         centerTitle: true,
       ),
-      body: Container(
-        alignment: Alignment.center,
-        child: Column(
-          children: [
-            Container(
-              width: 200,
-              height: 200,
-              color: Colors.blue,
-            )
-          ],
-        ),
+      body: ListView(
+        children: [
+          ...getListViewItem(1, Colors.blue),
+          ...getListViewItem(2, Colors.red),
+          ...getListViewItem(3, Colors.green),
+        ]
       ),
     );
+  }
+
+  List<Widget> getListViewItem(int index, Color color) {
+    return [
+        Text('List #$index'),
+        Container(
+          width: 200,
+          height: 200,
+          color: color,
+        )
+      ];
   }
 }
