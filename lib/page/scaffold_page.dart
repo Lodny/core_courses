@@ -18,14 +18,14 @@ class ScaffoldPage extends StatelessWidget {
               onPressed: () {
                 print('pressed: TextButton');
               },
-              child: Container(
-                width: 100,
-                height: 100,
-                color: Colors.orange
-              ),
+              child: const Text('Text Button'),
             ),
             GestureDetector(
-              child: const Text('GestureDetector'),
+              child: Container(
+                  width: 100,
+                  height: 100,
+                  color: Colors.orange
+              ),
               onTap: () {
                 print('tapped: GestureDetector');
               },
