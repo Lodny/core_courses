@@ -9,7 +9,7 @@ class StudentController extends GetxController {
   ].obs;
   // RxList<Rx<Student>> studentList = RxList.empty();
 
-  List<String> newStudentNameList = ['Andrew', 'Brian', 'Catherine'];
+  List<String> newStudentNameList = ['Andrew2', 'Brian2', 'Catherine2'];
   List<String> newStudentGradeList = ['A+', 'B+', 'C+'];
 
   void updateName(int index, String name) {
