@@ -16,6 +16,14 @@ class FlutterLocalNotification {
     await plugin.initialize(initializationSettings);
   }
 
+  static requestNotificationPermission() {
+    print('hi');
+
+    plugin.resolvePlatformSpecificImplementation<IOSFlutterLocalNotificationsPlugin>()
+        ?.requestPermissions(alert: true, badge: true, sound: true);
+    // plugin.requestPermissions(alert: true, badge: true, sound: true);
+  }
+
   static Future<void> showNotification() async {
     const AndroidNotificationDetails details = AndroidNotificationDetails(
         'channel id', 'channel name',
